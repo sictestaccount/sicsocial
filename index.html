@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>.lw { font-size: 60px; }</style>
+        </head>
+        <body>
+            
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIC Social Media Links</title>
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --text-color: #000;
+      --radius: 16px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      --transition: 0.4s ease;
+      --bg: #f5f5f5;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      font-family: 'Inter', Helvetica, Arial, sans-serif;
+      color: var(--text-color);
+    }
+
+    .header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      margin: 10px 0 5px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .header p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 16px;
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: #FF914D;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 22px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  transition: background-color var(--transition), box-shadow var(--transition), transform var(--transition), opacity 0.4s ease;
+}
+
+.social-link:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+    .icon-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      transition: all var(--transition);
+      position: relative;
+      z-index: 2;
+    }
+
+    .label-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      height: 1.3em;
+      margin-left: 16px;
+    }
+
+    .label-default,
+    .label-hover {
+      position: absolute;
+      top: 0;
+      white-space: nowrap;
+      transition: all var(--transition);
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
+    .label-default {
+      left: 0;
+      opacity: 1;
+      transform: translateX(0);
+      filter: blur(0px);
+    }
+
+    .label-hover {
+      left: 0;
+      opacity: 0;
+      transform: translateX(-30px);
+      filter: blur(2px);
+    }
+
+    .social-link:hover .icon-circle {
+      transform: translateX(320px) scale(1.15);
+    }
+
+    .social-link:hover .label-default {
+      opacity: 0;
+      transform: translateX(140px);
+      filter: blur(2px);
+    }
+
+    .social-link:hover .label-hover {
+      opacity: 1;
+      transform: translateX(0);
+      filter: blur(0);
+    }
+
+    /* Platform Specific Styles */
+    .facebook {
+      background-color: #4267B2;
+    }
+    .facebook-bg {
+      background-color: #E8F0FE;
+    }
+
+    .instagram {
+      background-color: #E1306C;
+    }
+    .instagram-bg {
+      background-color: #FDECEF;
+    }
+
+    .linkedin {
+      background-color: #0077B5;
+    }
+    .linkedin-bg {
+      background-color: #E6F4F9;
+    }
+
+    .twitter {
+      background-color: #1DA1F2;
+    }
+    .twitter-bg {
+      background-color: #E5F8FE;
+    }
+
+    .youtube {
+      background-color: #FF0000;
+    }
+    .youtube-bg {
+      background-color: #FEECEC;
+    }
+
+    @media (max-width: 600px) {
+      .social-link {
+        padding: 12px 18px;
+      }
+      .icon-circle {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+      }
+      .label-container {
+        margin-left: 12px;
+      }
+    }
+  </style>
+
+
+
+  <div class="header">
+    <img src="logo.png" alt="Skyline Logo">
+    <h1>SKYLINE INTERNATIONAL COLLEGE</h1>
+    <p>SIC Social Media Links</p>
+  </div>
+    <div class="button-container">
+
+        <a class="social-link facebook-bg" href="https://www.facebook.com/SkylineInternationalCollege" target="_blank">
+        <div class="icon-circle facebook">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+        <span class="label-container">
+            <span class="label-default">Facebook</span>
+            <span class="label-hover">Go to Link</span>
+        </span>
+        </a>
+
+        <a class="social-link instagram-bg" href="https://www.instagram.com/skylineinternationalcollege/" target="_blank">
+        <div class="icon-circle instagram">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <span class="label-container">
+            <span class="label-default">Instagram</span>
+            <span class="label-hover">Go to Link</span>
+        </span>
+        </a>
+
+        <a class="social-link linkedin-bg" href="https://www.linkedin.com/company/skyline-international-college/" target="_blank">
+        <div class="icon-circle linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <span class="label-container">
+            <span class="label-default">LinkedIn</span>
+            <span class="label-hover">Go to Link</span>
+        </span>
+        </a>
+
+        <a class="social-link twitter-bg" href="https://x.com/skylineint" target="_blank">
+        <div class="icon-circle twitter">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <span class="label-container">
+            <span class="label-default">Twitter</span>
+            <span class="label-hover">Go to Link</span>
+        </span>
+        </a>
+
+        <a class="social-link youtube-bg" href="https://www.youtube.com/channel/UCfTDIdtumV8GRv73TsjnqQw" target="_blank">
+        <div class="icon-circle youtube">
+            <i class="fab fa-youtube"></i>
+        </div>
+        <span class="label-container">
+            <span class="label-default">YouTube</span>
+            <span class="label-hover">Go to Link</span>
+        </span>
+        </a>
+
+    </div>
+
+
+
+
+
+
+            <script>// Write JavaScript here</script>
+        
+    
+</body>
